@@ -1,0 +1,76 @@
+.wq-search-form {
+  width: 100%;
+  height: 50px;
+}
+
+.s {
+  width: 100%;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 14px;
+  float: left;
+  color: #63717f;
+  padding-left: 25px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.wq-contact-form{
+    width: 100%;
+    padding: 30px;
+    background: $color__background-contact-form;
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22); // TODO: change to sass variable
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+
+.wq-contact-form input[type="text"],
+.wq-contact-form input[type="date"],
+.wq-contact-form input[type="datetime"],
+.wq-contact-form input[type="email"],
+.wq-contact-form input[type="number"],
+.wq-contact-form input[type="search"],
+.wq-contact-form input[type="time"],
+.wq-contact-form input[type="url"],
+.wq-contact-form input[type="tel"],
+.wq-contact-form input[type="password"],
+.wq-contact-form textarea,
+.wq-contact-form select
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd; // TODO: change to sass variable
+    background: transparent;
+    margin-bottom: 10px;
+    height: 45px;
+}
+.wq-contact-form textarea{
+    resize:none;
+    overflow: hidden;
+}
+
+.hpot {
+  display: none !important;
+}
+
+.alertbox-success {
+  @include alertbox;
+  border-left-color: $color__alertbox-success;
+}
+
+.alertbox-error {
+  @include alertbox;
+  border-left-color: $color__alertbox-error;
+}

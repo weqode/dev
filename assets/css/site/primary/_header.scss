@@ -1,0 +1,23 @@
+// Main header container
+.sticky-header {
+  padding: 20px 100px;
+  position: fixed;
+  transition: opacity 0.5s ease-in-out;
+  width: 100%;
+  top: 0;
+  background-color: $color__background-sticky-nav;
+  z-index: 999;
+}
+
+.header-content-container {
+  margin-top: 10px;
+}
+
+.wq-logo {
+  float: left;
+  margin-right: 20px;
+}
+
+.main-navigation {
+  float: right;
+}

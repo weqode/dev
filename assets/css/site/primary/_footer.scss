@@ -1,0 +1,31 @@
+.site-footer {
+  background-color: $color__background-site-footer;
+}
+
+.footer-content {
+  @include site-wrapper;
+  overflow: hidden;
+  color: $color__text-site-footer;
+  a {
+    color: $color__link-site-footer;
+    @include hover-text-effect-before;
+  }
+  a:hover {
+    color: $color__link-hover-site-footer;
+    @include hover-text-effect-after;
+  }
+}
+
+.footer-container {
+  width: 100%;
+  display: inline-block;
+  background-color: green;
+}
+
+.footer-lower-container {
+  background-color: red;
+}
+
+.site-copyright {
+  @include site-wrapper;
+}

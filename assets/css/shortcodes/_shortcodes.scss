@@ -1,0 +1,201 @@
+// Service icon
+.service-icon {
+  position: relative;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.fa-service-icon {
+  font-size: 2.5em !important;
+}
+
+// Callout box
+.callout-box {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+  color: $color__text-main;
+  h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+  code {
+    border-radius: 3px;
+  }
+  + .callout-box {
+    margin-top: -5px;
+  }
+}
+
+.callout-box-default {
+  border-left-color: $color__callout-box-default;
+  h4 {
+    color: $color__callout-box-default;
+  }
+}
+
+.callout-box-primary {
+  border-left-color: $color__callout-box-primary;
+  h4 {
+    color: $color__callout-box-primary;
+  }
+}
+
+.callout-box-success {
+  border-left-color: $color__callout-box-success;
+  h4 {
+    color: $color__callout-box-success;
+  }
+}
+
+.callout-box-danger {
+  border-left-color: $color__callout-box-danger;
+  h4 {
+    color: $color__callout-box-danger;
+  }
+}
+
+.callout-box-warning {
+  border-left-color: $color__callout-box-warning;
+  h4 {
+    color: $color__callout-box-warning;
+  }
+}
+
+.callout-box-info {
+  border-left-color: $color__callout-box-info;
+  h4 {
+    color: $color__callout-box-info;
+  }
+}
+
+// Blockquote
+.fa-quote-left:before {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+// Teaser box
+.teaser-box-content {
+  background-color: $color__background-teaser-box;
+  padding: 10px;
+}
+
+.teaser-box-content p {
+  @include remove-paragraph-margin;
+}
+
+.teaser-box-img {
+  @include background-image-cover;
+  width: 100%;
+  height: 200px;
+}
+
+// Content img box
+.content-img-box-image {
+  @include background-image-cover;
+  width: 100%;
+  height: 200px;
+}
+
+.content-img-box-container {
+  @include hover-background-effect-before;
+}
+
+.content-img-box-container:hover {
+  background-color: $color__background-content-image-box;
+  @include hover-background-effect-after;
+}
+
+// Testimonial slider
+.testimonial-slider {
+  width: 100%;
+  height: 230px;
+}
+
+.testimonial-slide {
+  height: 230px !important;
+}
+
+ .testimonial-slider .slides > li {
+  background: $color__background-testimonial-slider !important;
+}
+
+.testimonial-slider .flex-control-nav {
+  display: none;
+}
+
+.testimonial-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.testimonial-caption p {
+  @include remove-paragraph-margin;
+}
+
+// FAQ accordion
+.accordion-content {
+  display: none;
+  padding: 10px 20px;
+  }
+.accordion-content.default {display: block;}
+
+.accordion-toggle {
+    border: 5px solid transparent;
+    background: $color__background-accordion;
+    padding: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    width: 80%;
+    -webkit-transition: all 0.8s, border .5s 0.8s, box-shadow .3s .6s;
+    transition: all 0.8s, border .5s 0.8s, box-shadow .3s .6s;
+    font-weight: 700;
+}
+
+.accordion-toggle span {
+    display: inline-block;
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+    font-weight: 400;
+    opacity: 0;
+    -webkit-transition: opacity .1s 0.5s, -webkit-transform .4s .5s;
+    transition: opacity .1s 0.5s, -webkit-transform .4s .5s;
+    transition: opacity .1s 0.5s, transform .4s .5s;
+    transition: opacity .1s 0.5s, transform .4s 0.5s, -webkit-transform .4s .5s;
+}
+.accordion-toggle:hover, .active {
+    text-indent: 0;
+    background: $color__background-accordion;
+    width: 90%;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.15);
+}
+
+.accordion-toggle:hover span {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+@media only screen and (max-width: 678px) {
+    .accordion-toggle {
+        width: 75%;
+    }
+    .accordion-toggle:hover, .accordion .opener.ui-state-active {
+        width: 80%;
+    }
+}
+
+.accordion-toggle .opener:hover, .accordion .opener.ui-state-active strong {
+    color: #fff;
+}

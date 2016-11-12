@@ -1,0 +1,42 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+		display: inline-block;
+		font-weight: 400;
+		line-height: 1.25;
+		text-align: center;
+		white-space: nowrap;
+	  vertical-align: middle;
+	  cursor: pointer;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
+	  border: 1px solid transparent;
+	  padding: .5rem 1rem;
+		margin-bottom: 5px;
+	  font-size: 1rem;
+	  border-radius: .25rem;
+		background: $color__background-button;
+		color: $color__text-button;
+		@include hover-background-effect-before;
+		@include hover-text-effect-before;
+
+	&:hover {
+		background: $color__background-button-hover;
+		color: $color__text-button-hover;
+		border: $color__border-button-hover;
+		@include hover-background-effect-after;
+		@include hover-text-effect-after;
+	}
+
+	&:active,
+	&:focus {
+		background: $color__background-button-hover;
+		color: $color__text-button-hover;
+		border: $color__border-button-focus;
+		@include hover-background-effect-after;
+		@include hover-text-effect-after;
+	}
+}

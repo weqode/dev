@@ -1,0 +1,21 @@
+.widget {
+	margin: 0 0 1.5em;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
+
+#secondary {
+	padding-left: 20px;
+}
+
+#secondary section {
+	padding: 30px;
+	background-color: $color__background-sidebar-widgets;
+}
+
+.footer-content .widget {
+	padding: 20px;
+}

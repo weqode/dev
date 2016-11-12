@@ -1,0 +1,95 @@
+/*=================================
+Base styles
+=================================*/
+
+.flexslider .slides .flexslider-content-container {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+@media screen and (max-width: 860px) {
+    .flex-direction-nav .flex-prev {
+        opacity: 1;
+        left: 10px;
+    }
+    .flex-direction-nav .flex-next {
+        opacity: 1;
+        right: 10px;
+    }
+}
+.slides, .slides> li, .flex-control-nav, .flex-direction-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.flex-pauseplay span {
+    text-transform: capitalize;
+}
+.flexslider {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2B2C36;
+    margin-bottom: 40px;
+}
+.flexslider .slides > li {
+    position: relative;
+    display: none;
+    -webkit-backface-visibility: hidden;
+    background: #2B2C36;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    // height: calc(100vh - 64px);
+}
+
+.flexslider .slides img {
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .9;
+    transition: opacity .5s ease;
+}
+.flexslider .slides:after {
+    content: "\0020";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+html[xmlns] .flexslider .slides {
+    display: block;
+}
+* html .flexslider .slides {
+    height: auto;
+}
+.no-js .flexslider .slides> li:first-child {
+    display: block;
+}
+.flexslider {
+    background: #2B2C36;
+    position: relative;
+    zoom: 1;
+}
+.flexslider .slides {
+    zoom: 1;
+}
+.carousel li {
+    margin-right: 5px;
+}

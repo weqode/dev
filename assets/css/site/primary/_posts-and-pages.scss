@@ -1,0 +1,63 @@
+#content {
+  @include site-wrapper;
+}
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.blog article {
+  background-color: $color__background-blog-post;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.blog img {
+  float: left;
+  margin-right: 30px;
+}
+
+.blog .blog-image {
+  width: 30%;
+  float: left;
+  display: block;
+}
+
+.blog .blog-excerpt {
+  width: 70%;
+  float: left;
+  display: block;
+}
+
+.cs-blog-archive-content {
+  margin-top: 0px;
+}
+
+// .blog {}
+// .single-post {}
+// .archive {}
