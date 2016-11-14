@@ -11,7 +11,7 @@
  */
 get_header(); ?>
 
-	<div id="primary" class="content-area bit-75">
+	<div id="primary" class="content-area bit-1">
 		<main id="main" class="site-main" role="main">
 
 			<?php

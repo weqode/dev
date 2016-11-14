@@ -44,12 +44,12 @@
   		<h1 class="cd-headline letters scale">
   			<span class="wq-slider-title">We<br /></span>
   			<span class="cd-words-wrapper">
-  				<b class="is-visible">Design</b>
-  				<b>Develop</b>
-          <b>Brand</b>
-          <b>Host</b>
-  				<b>Search&nbsp;Engine&nbsp;Optimise</b>
-          <b>Pay&nbsp;Per&nbsp;Click</b>
+  				<b class="is-visible wq-headline-center">Design</b>
+  				<b class="wq-headline-center">Develop</b>
+          <b class="wq-headline-center">Brand</b>
+          <b class="wq-headline-center">Host</b>
+  				<b class="wq-headline-center">Search&nbsp;Engine&nbsp;Optimise</b>
+          <b class="wq-headline-center">Pay&nbsp;Per&nbsp;Click</b>
   			</span>
   		</h1>
   	</section> <!-- cd-intro -->

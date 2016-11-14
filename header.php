@@ -25,31 +25,14 @@
 	<!-- // Header container -->
 	<header id="masthead" class="site-header sticky-header nav-down" role="banner">
 		<div class="header-content-container">
+
 			<!-- //logo -->
 			<div class="wq-logo">
 				<a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img src="<?php bloginfo('template_directory'); ?>/assets/img/weqode-logo.png" alt="logo" id="logo" width="160" height="160"></a>
 			</div>
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'wq'); ?></button>
-			<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu desktop-menu')); ?>
-<?php
-            /* The below code checks if a mobile-menu is set from the backend in the menu settings. If a menu has been set it will be displayed in the header. Or else, a menu has not been set then display a message.*/
-            if (function_exists('has_nav_menu') && has_nav_menu('mobile-menu')) {
-                wp_nav_menu(array(
-                  'depth' => 6,
-                  'sort_column' => 'menu_order',
-                  'container' => 'ul',
-                  'menu_id' => 'main-nav',
-                  'menu_class' => 'nav mobile-menu',
-                  'theme_location' => 'mobile-menu',
-                ));
-            } else {
-                echo "<ul class='nav mobile-menu'> <font style='color:red'>Mobile Menu has not been set</font> </ul>";
-            }
-            ?>
-
-
-		</nav><!-- #site-navigation -->
+			<nav class="wq-main-nav main-navigation" id="site-navigation" role="navigation">
+							<?php wp_nav_menu(array('main_nav' => 'Main Navigation Menu')); ?>
+			</nav>	<!-- #site-navigation -->
 	</div><!-- .header-content-container -->
 	</header><!-- #masthead -->
 

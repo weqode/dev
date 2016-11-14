@@ -4,17 +4,34 @@
 //= include customizer.js
 //= include sisyphus.min.js
 //= include wq-animation.js
-//= include modernizer.js
+//= include modernizr.js
+
 
 // Adjust body margin based on fixed header heihght
 // jQuery(window).resize(function() {
 //     jQuery(document.body).css("margin-top", jQuery(".sticky-header").outerHeight(true));
 // }).resize();
 
+// Smooth scroll
+jQuery(function() {
+    jQuery('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = jQuery(this.hash);
+            target = target.length ? target : jQuery('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                jQuery('html, body').animate({
+                    scrollTop: target.offset().top - 100
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
+
 // Button scroll
 jQuery(".button-triangle").click(function() {
     jQuery('html, body').animate({
-        scrollTop: jQuery(".section-1").offset().top
+        scrollTop: jQuery("#section-1").offset().top - 100
     }, 2000);
 });
 
@@ -135,13 +152,6 @@ function adjust_textarea(h) {
 }
 
 // Scroll form into view after submission for errors
-jQuery('html, body').animate({
-    scrollTop: (jQuery('.wq-error .wq-success').first().offset().top)
-}, 500);
-
-
-
-
-
-//Flex slider full height
-// var height = screen.height
+// jQuery('html, body').animate({
+//     scrollTop: (jQuery('.wq-error .wq-success').first().offset().top)
+// }, 500);

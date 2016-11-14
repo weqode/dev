@@ -79,9 +79,7 @@ a:hover,a:active{outline:0}#breadcrumbs{list-style:none;margin:10px 0;overflow:h
 }.site-main .comment-navigation,.site-main .posts-navigation,.site-main .post-navigation{margin:0 0 1.5em;overflow:hidden}
 .comment-navigation .nav-previous,.posts-navigation .nav-previous,.post-navigation .nav-previous{float:left;width:50%}
 .comment-navigation .nav-next,.posts-navigation .nav-next,.post-navigation .nav-next{float:right;text-align:right;width:50%}
-.mobile-menu{display:none}@media only screen and (min-width:800px){.desktop-menu{display:block !important}
-.mobile-menu{display:none !important}}@media only screen and (max-width:799px){.desktop-menu{display:none !important}
-.mobile-menu{display:block !important}}.screen-reader-text{clip:rect(1px,1px,1px,1px);position:absolute !important;height:1px;width:1px;overflow:hidden}
+.screen-reader-text{clip:rect(1px,1px,1px,1px);position:absolute !important;height:1px;width:1px;overflow:hidden}
 .screen-reader-text:focus{background-color:#f1f1f1;border-radius:3px;box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto !important;color:#21759b;display:block;font-size:14px;font-size:.875rem;font-weight:bold;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
 #content[tabindex="-1"]:focus{outline:0}.alignleft{display:inline;float:left;margin-right:1.5em}
 .alignright{display:inline;float:right;margin-left:1.5em}.aligncenter{clear:both;display:block;margin-left:auto;margin-right:auto}
@@ -139,14 +137,15 @@ a:hover,a:active{outline:0}#breadcrumbs{list-style:none;margin:10px 0;overflow:h
 .infinity-end.neverending .site-footer{display:block}.flexslider .slides .flexslider-content-container{width:100%;position:absolute;text-align:center;top:0;right:0;bottom:0;left:0}
 @media screen and (max-width:860px){.flex-direction-nav .flex-prev{opacity:1;left:10px}
 .flex-direction-nav .flex-next{opacity:1;right:10px}}.slides,.slides>li,.flex-control-nav,.flex-direction-nav{margin:0;padding:0;list-style:none}
-.flex-pauseplay span{text-transform:capitalize}.flexslider{margin:0;padding:0;overflow:hidden;background-color:#2b2c36;margin-bottom:40px}
+.flex-pauseplay span{text-transform:capitalize}.flexslider{margin:0;padding:0;overflow:hidden;background-color:#2b2c36}
 .flexslider .slides>li{position:relative;display:none;-webkit-backface-visibility:hidden;background:#2b2c36;background-position:center center;background-repeat:no-repeat;background-size:cover;width:100%;height:100vh}
 .flexslider .slides img{-webkit-transition:opacity .5s ease;-moz-transition:opacity .5s ease;-ms-transition:opacity .5s ease;-o-transition:opacity .5s ease;position:absolute;background-position:center center;background-repeat:no-repeat;background-size:cover;top:0;right:0;bottom:0;left:0;opacity:.9;transition:opacity .5s ease}
 .flexslider .slides:after{content:"\0020";display:block;clear:both;visibility:hidden;line-height:0;height:0}
 html[xmlns] .flexslider .slides{display:block}* html .flexslider .slides{height:auto}
 .no-js .flexslider .slides>li:first-child{display:block}.flexslider{background:#2b2c36;position:relative;zoom:1}
 .flexslider .slides{zoom:1}.carousel li{margin-right:5px}*,*::after,*::before{box-sizing:border-box}
-html *{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.cd-intro{max-width:768px;text-align:center;position:absolute;top:50%;left:35%;transform:translate(-50%,-50%)}
+html *{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.wq-headline-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin-top:20px}
+i.in{padding-right:5px}.cd-intro{max-width:768px;text-align:center;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
 .cd-headline{font-size:1.8rem;line-height:1.2}@media only screen and (min-width:768px){.cd-headline{font-size:2.8rem;font-weight:300}
 }@media only screen and (min-width:1170px){.cd-headline{font-size:3.4rem}}.cd-words-wrapper{display:inline-block;position:relative;text-align:left}
 .cd-words-wrapper b{display:inline-block;position:absolute;white-space:nowrap;left:0;top:0}
