@@ -199,3 +199,21 @@
 .accordion-toggle .opener:hover, .accordion .opener.ui-state-active strong {
     color: #fff;
 }
+
+.wq-section {
+  height: 100vh;
+}
+
+.wq-section-content {
+  @include site-wrapper;
+}
+
+.wq-section-dark {
+  background-color: #2b2c36;
+  color: #eee;
+}
+
+.wq-section-green {
+  background-color: #4dbfaa;
+  color: #eee;
+}

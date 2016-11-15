@@ -4,6 +4,8 @@
 //= include customizer.js
 //= include sisyphus.min.js
 //= include wq-animation.js
+//= include wq-one-page-nav.js
+//= include slidepanel.js
 //= include modernizr.js
 
 
@@ -13,25 +15,25 @@
 // }).resize();
 
 // Smooth scroll
-jQuery(function() {
-    jQuery('a[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = jQuery(this.hash);
-            target = target.length ? target : jQuery('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                jQuery('html, body').animate({
-                    scrollTop: target.offset().top - 100
-                }, 1000);
-                return false;
-            }
-        }
-    });
-});
+// jQuery(function() {
+//     jQuery('a[href*="#"]:not([href="#"])').click(function() {
+//         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+//             var target = jQuery(this.hash);
+//             target = target.length ? target : jQuery('[name=' + this.hash.slice(1) + ']');
+//             if (target.length) {
+//                 jQuery('html, body').animate({
+//                     scrollTop: target.offset().top - 100
+//                 }, 1000);
+//                 return false;
+//             }
+//         }
+//     });
+// });
 
 // Button scroll
 jQuery(".button-triangle").click(function() {
     jQuery('html, body').animate({
-        scrollTop: jQuery("#section-1").offset().top - 100
+        scrollTop: jQuery("#what-we-do").offset().top - 100
     }, 2000);
 });
 
@@ -67,40 +69,8 @@ jQuery(window).load(function() {
     });
 });
 
-// Sticky nav
 jQuery(document).ready(function() {
-    // Hide Header on on scroll down
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 5;
-    var navbarHeight = jQuery('.sticky-header').outerHeight();
-    jQuery(window).scroll(function(event) {
-        didScroll = true;
-    });
-    setInterval(function() {
-        if (didScroll) {
-            hasScrolled();
-            didScroll = false;
-        }
-    }, 250);
 
-    function hasScrolled() {
-        var st = jQuery(this).scrollTop();
-        // Make sure they scroll more than delta
-        if (Math.abs(lastScrollTop - st) <= delta) return;
-        // If they scrolled down and are past the navbar, add class .nav-up.
-        // This is necessary so you never see what is "behind" the navbar.
-        if (st > lastScrollTop && st > navbarHeight) {
-            // Scroll Down
-            jQuery('.sticky-header').removeClass('nav-show').addClass('nav-hide');
-        } else {
-            // Scroll Up
-            if (st + jQuery(window).height() < jQuery(document).height()) {
-                jQuery('.sticky-header').removeClass('nav-hide').addClass('nav-show');
-            }
-        }
-        lastScrollTop = st;
-    }
     // Remove empty p tags
     jQuery('p:empty').remove();
 

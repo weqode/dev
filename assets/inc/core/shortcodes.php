@@ -272,8 +272,9 @@ function wq_section($atts, $content = null)
     extract(shortcode_atts(array(
   'class' => '',
   'id' => '',
+  'title' => '',
 ), $atts));
 
-    return '<section id="'.$id.'" class="'.$class.'">'.$content.'</section>
+    return '<section id="'.$id.'" class="wq-section '.$class.'"><div class="wq-section-content"><h2>'.$title.'</h2>'.$content.'</div></section>
   ';
 }

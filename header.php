@@ -30,8 +30,18 @@
 			<div class="wq-logo">
 				<a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img src="<?php bloginfo('template_directory'); ?>/assets/img/weqode-logo.png" alt="logo" id="logo" width="160" height="160"></a>
 			</div>
-			<nav class="wq-main-nav main-navigation" id="site-navigation" role="navigation">
-							<?php wp_nav_menu(array('main_nav' => 'Main Navigation Menu')); ?>
+			<!--//Responsive nav -->
+			<nav id="site-navigation" class="wq-main-nav main-navigation" role="navigation">
+<div id="toggle">
+  <div class="wq-mobile-menu">
+  <span class="wq-mobile-menu-global wq-mobile-menu-top"></span>
+  <span class="wq-mobile-menu-global wq-mobile-menu-middle"></span>
+  <span class="wq-mobile-menu-global wq-mobile-menu-bottom"></span>
+</div>
+</div>
+<div id="popout">
+<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => 'nav-menu')); ?>
+</div>
 			</nav>	<!-- #site-navigation -->
 	</div><!-- .header-content-container -->
 	</header><!-- #masthead -->
